@@ -1,5 +1,5 @@
-const { login } = require("../../../../cypress/PageObjects/LoginPage");
-const loginPage = require("../../../../cypress/PageObjects/LoginPage");
+const { login } = require("../../../PageObjects/LoginPage");
+const loginPage = require("../../../PageObjects/LoginPage");
 // cypress\PageObjects\LoginPage.js
 describe("Adding items to cart", () => {
   beforeEach(() => {

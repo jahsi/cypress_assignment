@@ -1,3 +1,5 @@
-cypress/videos/login.cy.js.mp4
-cypress/videos/login.cy.js.mp4
-cypress/**
+
+cypress/videos/**
+cypress/videos/
+cypress/screenshots/**
+cypress/screenshots/

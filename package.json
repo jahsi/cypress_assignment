@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "authentication": "cypress run --spec cypress/e2e/assignment/Auth/login.cy.js "
+    "authentication": "cypress run --spec cypress/e2e/assignment/Auth/addItemToCart.cy.js "
   },
   "keywords": [],
   "author": "",
