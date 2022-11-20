@@ -2,6 +2,9 @@ class LoginPage {
   get username() {
     return cy.get('[data-test="username"]');
   }
+  get sideBarButton() {
+    return cy.get("#react-burger-menu-btn");
+  }
 
   get password() {
     return cy.get('[data-test="password"]');
@@ -16,6 +19,17 @@ class LoginPage {
     this.password.type("secret_sauce");
     this.submitButton.click();
   }
+
+  logout() {
+    this.sideBarButton.click();
+  }
+  clickRemoveAllItems() {
+    let count = 6;
+    for (let i = 0; i < count; i++) {
+      cy.get(".btn_inventory").eq(i).click();
+    }
+    // return
+  }
   //// :nth-child(5)>.inventory_item_description>.pricebar>.btn
   getAllitems() {
     let count = 6;
@@ -24,11 +38,12 @@ class LoginPage {
     }
     // return cy.get(".btn_inventory");
   }
+  removeAllItems() {
+    this.clickRemoveAllItems();
+  }
 
   addallitemsToCart() {
-    console.log("lololol");
     this.getAllitems();
-    console.log(this.count);
     // console.log(this.getAllitems().length);
   }
 }
