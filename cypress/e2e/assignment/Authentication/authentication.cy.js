@@ -13,7 +13,7 @@ describe("Authentication Test", () => {
     console.log("Log me out");
     cy.clearCookies();
   });
-  it.skip("Login With Valid User ", () => {
+  it("Login With Valid User ", () => {
     loginPage.username.type(User.valid.username);
     loginPage.password.type(User.valid.password);
     loginPage.submitButton.click();
@@ -23,7 +23,7 @@ describe("Authentication Test", () => {
     // cy.get(".btn_inventory").its("length").should("eq", 6);
   });
 
-  xit("should login in with a locked out user", () => {
+  it("should login in with a locked out user", () => {
     loginPage.username.type(User.lockedOutUser.username);
     loginPage.password.type(User.lockedOutUser.password);
     loginPage.submitButton.click();
