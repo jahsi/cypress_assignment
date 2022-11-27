@@ -10,6 +10,10 @@ class MainPage {
     // return
   }
 
+  get dropDownMenu() {
+    return cy.get('[data-test="product_sort_container"]');
+  }
+
   gotToShoppingCart() {
     this.shoppingCartButton.click();
   }
@@ -28,6 +32,11 @@ class MainPage {
   addallitemsToCart() {
     this.getAllitems();
     // console.log(this.getAllitems().length);
+  }
+
+  filterObjedcts() {
+    this.dropDownMenu.select(1);
+    // this.dropDownMenu.select(1);
   }
 }
 module.exports = new MainPage();

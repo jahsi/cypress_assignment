@@ -24,7 +24,7 @@ describe("Adding items to cart", () => {
 
     // cy.get(".btn_inventory").its("length").should("eq", 6);
   });
-  it("should remove items from the item except one", () => {
+  it("should remove items from the checkout screen", () => {
     loginPage.addallitemsToCart();
     MainPage.gotToShoppingCart();
     CartPage.shoppingCartButton.contains("6");

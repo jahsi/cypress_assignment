@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "authentication": "cypress run --spec cypress/e2e/assignment/Auth/addItemToCart.cy.js "
+    "addItemToCart": "cypress run --spec cypress/e2e/assignment/Auth/addItemToCart.cy.js ",
+    "removeItemFromCart": "cypress run --spec cypress/e2e/Auth/removeItemFromCart.cy.js ",
+    "filterObjectsAndVerify": "cypress run --spec cypress/e2e/Auth/filterObjectsAndVerify.cy.js "
   },
   "keywords": [],
   "author": "",
