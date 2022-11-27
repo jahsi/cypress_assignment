@@ -4,8 +4,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "authentication": "cypress run --spec cypress/e2e/assignment/Auth/login.cy.js "
+    "authentication_test": "cypress run --spec cypress/e2e/assignment/Authentication/authentication.cy.js",
+    "addItemToCart": "cypress run --spec cypress/e2e/assignment/CartItem/addItemToCart.cy.js ",
+    "removeItemFromCart": "cypress run --spec cypress/e2e/assignment/CartItem/removeItemFromCart.cy.js ",
+    "filterObjectsAndVerify": "cypress run --spec cypress/e2e/assignment/Filter/filterObjects.cy.js ",
+    "checkOutItem": "cypress run --spec cypress/e2e/assignment/CheckOut/checkOutTest.cy.js"
+
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
