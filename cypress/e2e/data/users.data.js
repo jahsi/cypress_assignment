@@ -16,4 +16,7 @@ module.exports = {
     username: "performance_glitch_user",
     password: "secret_sauce",
   },
+  wrong_password: "wrong_password",
+  wrong_password_error_message:
+    "Username and password do not match any user in this service",
 };

@@ -34,9 +34,16 @@ class MainPage {
     // console.log(this.getAllitems().length);
   }
 
-  filterObjedcts() {
-    this.dropDownMenu.select(1);
+  filterObjedcts(filter_value) {
+    this.dropDownMenu.select(filter_value);
     // this.dropDownMenu.select(1);
+  }
+
+  get itemsName() {
+    return ".inventory_item_name";
+  }
+  get itemsPrice() {
+    return ".inventory_item_price";
   }
 }
 module.exports = new MainPage();
