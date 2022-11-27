@@ -2,6 +2,9 @@ class CartPage {
   get shoppingCartButton() {
     return cy.get(".shopping_cart_link");
   }
+  get checkOutButton() {
+    return cy.get(`button[id="checkout"]`);
+  }
   clickRemoveAllItems() {
     let count = 5;
     let items_left = 1;
